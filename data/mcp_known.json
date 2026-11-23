@@ -1,0 +1,22 @@
+{
+  "_about": "Reviewer's best-known map of apps that ship an OFFICIAL MCP server, as of the check. true = confident; app absent = not confirmed (shown as '—'), NOT a claim of absence. Used as a zero-credit signal; the agent also runs a live MCP search when credits allow. CONFIRM against the vendor's MCP docs before trusting.",
+  "has_mcp": {
+    "GitHub": "https://github.com/github/github-mcp-server",
+    "Stripe": "https://docs.stripe.com/mcp",
+    "Notion": "https://developers.notion.com/docs/mcp",
+    "Linear": "https://linear.app/docs/mcp",
+    "HubSpot": "https://developers.hubspot.com/mcp",
+    "Shopify": "https://shopify.dev/docs/apps/build/storefront-mcp",
+    "Firecrawl": "https://docs.firecrawl.dev/mcp",
+    "Apify": "https://docs.apify.com/platform/integrations/mcp",
+    "Jira": "https://www.atlassian.com/platform/remote-mcp-server",
+    "Asana": "https://developers.asana.com/docs/mcp-server",
+    "Sentry": "https://docs.sentry.io/product/sentry-mcp/",
+    "Cloudflare": "https://developers.cloudflare.com/agents/model-context-protocol/",
+    "Vercel": "https://vercel.com/docs/mcp",
+    "Supabase": "https://supabase.com/docs/guides/getting-started/mcp",
+    "Intercom": "https://developers.intercom.com/docs/mcp",
+    "Devin": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "Otter AI": "https://help.otter.ai/"
+  }
+}

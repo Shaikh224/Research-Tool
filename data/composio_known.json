@@ -1,0 +1,16 @@
+{
+  "_about": "Reviewer's best-known map of which research apps already have a Composio toolkit (ground-truth-ish signal for buildability + auth). true = confident Composio ships it; app absent = NOT confirmed (treated as unknown, shown as '—'), NOT a claim of absence. Set COMPOSIO_SEARCH=true in .env to confirm/fill exact toolkit URLs via Firecrawl.",
+  "supported": {
+    "Salesforce": true, "HubSpot": true, "Pipedrive": true, "Attio": true,
+    "Zoho CRM": true, "Close": true,
+    "Zendesk": true, "Intercom": true, "Freshdesk": true, "Front": true, "Gorgias": true,
+    "Slack": true, "Twilio": true, "Discord": true, "Telegram": true,
+    "Google Ads": true, "Mailchimp": true, "Klaviyo": true, "Pinterest": true, "SendGrid": true,
+    "Shopify": true, "BigCommerce": true,
+    "Apify": true, "Firecrawl": true,
+    "GitHub": true, "Vercel": true, "Cloudflare": true, "Supabase": true, "Sentry": true,
+    "Notion": true, "Airtable": true, "Linear": true, "Jira": true, "Asana": true,
+    "Monday.com": true, "ClickUp": true, "Coda": true,
+    "Stripe": true, "QuickBooks": true, "Xero": true
+  }
+}

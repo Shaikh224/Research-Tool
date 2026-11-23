@@ -1,0 +1,132 @@
+{
+  "n": 100,
+  "auth": {
+    "oauth2": 51,
+    "none": 32,
+    "api_key": 28,
+    "token": 9,
+    "basic": 6
+  },
+  "access": {
+    "self-serve-free": 70,
+    "self-serve-trial": 13,
+    "admin-approval": 9,
+    "partner-gated": 3,
+    "unknown": 3,
+    "paid-plan": 2
+  },
+  "verdict": {
+    "buildable-now": 82,
+    "buildable-with-friction": 14,
+    "blocked": 3,
+    "not-an-api": 1
+  },
+  "blockers": {
+    "Requires org admin / developer-token approval to call in production.": 9,
+    "Credentials gated behind partnership / contact-sales / app review.": 3,
+    "Access model unclear from docs — needs manual confirmation.": 2,
+    "API access requires a paid plan.": 2,
+    "API docs unclear or not found — needs manual confirmation.": 1
+  },
+  "mcp_count": 45,
+  "composio_count": 40,
+  "by_category": [
+    {
+      "category": "CRM and Sales",
+      "total": 10,
+      "buildable_now": 9,
+      "with_friction": 0,
+      "blocked": 1,
+      "not_api": 0,
+      "buildable_pct": 90
+    },
+    {
+      "category": "Support and Helpdesk",
+      "total": 10,
+      "buildable_now": 7,
+      "with_friction": 3,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 70
+    },
+    {
+      "category": "Communications and Messaging",
+      "total": 10,
+      "buildable_now": 8,
+      "with_friction": 2,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 80
+    },
+    {
+      "category": "Marketing, Ads, Email and Social",
+      "total": 10,
+      "buildable_now": 9,
+      "with_friction": 1,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 90
+    },
+    {
+      "category": "Ecommerce",
+      "total": 10,
+      "buildable_now": 7,
+      "with_friction": 3,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 70
+    },
+    {
+      "category": "Data, SEO and Scraping",
+      "total": 10,
+      "buildable_now": 8,
+      "with_friction": 2,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 80
+    },
+    {
+      "category": "Developer, Infra and Data platforms",
+      "total": 10,
+      "buildable_now": 9,
+      "with_friction": 1,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 90
+    },
+    {
+      "category": "Productivity and Project Management",
+      "total": 10,
+      "buildable_now": 9,
+      "with_friction": 1,
+      "blocked": 0,
+      "not_api": 0,
+      "buildable_pct": 90
+    },
+    {
+      "category": "Finance and Fintech",
+      "total": 10,
+      "buildable_now": 7,
+      "with_friction": 1,
+      "blocked": 2,
+      "not_api": 0,
+      "buildable_pct": 70
+    },
+    {
+      "category": "AI, Research and Media-native",
+      "total": 10,
+      "buildable_now": 9,
+      "with_friction": 0,
+      "blocked": 0,
+      "not_api": 1,
+      "buildable_pct": 90
+    }
+  ],
+  "insights": [
+    "Of 100 apps, 82 are buildable as an agent toolkit today and 17 are buildable only with friction or blocked — the long tail of OAuth app-review and contact-sales gates is where the real work is.",
+    "Among apps with a conclusive answer, OAUTH2 is the most common auth (51 apps) — the toolkit layer must treat OAuth2 and API-key as first-class.",
+    "Easiest categories: CRM and Sales and Marketing, Ads, Email and Social (90% / 90% buildable now).",
+    "Composio already covers 40/100 of these apps; 45/100 ship an official MCP server — the agent-native surface is still early.",
+    "Data completeness: 66/100 apps returned a conclusive auth + access on this run; 3 still read 'unknown' (thin docs / credit-limited scrape) and are flagged for a cleaner re-run — stated plainly rather than guessed."
+  ]
+}

@@ -1,0 +1,19 @@
+# Secrets
+.env
+
+# Python
+__pycache__/
+*.pyc
+.venv/
+venv/
+
+# Firecrawl raw scrape cache (regenerable; keep the repo light)
+data/raw_cache/
+
+# Run logs
+data/*.log
+*.log
+
+# Generated run artifacts are kept (results.json, site/index.html) so the
+# repo ships with a reproducible snapshot. Delete the line below to ignore them.
+# data/results.json

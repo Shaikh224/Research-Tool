@@ -1,0 +1,26 @@
+{
+  "_about": "Honest record of how accuracy and data-completeness moved across runs because of the verification loops. Accuracy is vs the 20-app gold sample; completeness = apps with a conclusive auth + access out of 100.",
+  "stages": [
+    {
+      "stage": "1 · First pass",
+      "accuracy": 56.2,
+      "completeness": 65,
+      "what": "Naive agent: one search + one scrape per app. MCP undetected, thin docs pages wrongly marked 'not-an-api', over-restrictive query returned nothing for ~a third of apps.",
+      "cost": "~250 Firecrawl credits"
+    },
+    {
+      "stage": "2 · Verification loops",
+      "accuracy": 71.2,
+      "completeness": 65,
+      "what": "Diagnosed the misses, then fixed: reviewer-seeded MCP map, recover auth from the already-scraped pricing page, and a verdict rule that won't call something 'not-an-api' on a thin extraction. Recomputed entirely from cache.",
+      "cost": "0 credits (offline re-compute)"
+    },
+    {
+      "stage": "3 · Hint-direct re-run",
+      "accuracy": 70.0,
+      "completeness": 97,
+      "what": "Scrape each app's documentation hint URL directly instead of guessing via search — more accurate and ~half the credits. Filled 32 of 35 'unknown' apps; verdict distribution became realistic. (Sample accuracy is noisy at n=20; the real win is completeness + trustworthy patterns.)",
+      "cost": "~120 credits"
+    }
+  ]
+}

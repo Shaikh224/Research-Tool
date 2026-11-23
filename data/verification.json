@@ -1,0 +1,1177 @@
+{
+  "sample_size": 20,
+  "fields": {
+    "auth_methods": 60.0,
+    "has_mcp": 80.0,
+    "access_model": {
+      "before": 60.0,
+      "after": 70.0
+    },
+    "verdict": {
+      "before": 65.0,
+      "after": 70.0
+    }
+  },
+  "overall": {
+    "before": 66.2,
+    "after": 70.0
+  },
+  "rows_changed_by_loop": 4,
+  "rows": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": false,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://salesforce.com",
+        "https://www.salesforce.com/pricing/"
+      ]
+    },
+    {
+      "id": 2,
+      "name": "HubSpot",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+        "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token",
+          "basic"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key",
+          "basic"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false,
+        "access_first_pass": "admin-approval"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://developer.zendesk.com/api-reference/"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "gold": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": false,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://slack.com",
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "gold": {
+        "auth": [
+          "basic",
+          "api_key"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": false,
+        "access_before": false,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://twilio.com",
+        "https://www.twilio.com/en-us/pricing"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "unknown",
+        "verdict": "buildable-with-friction",
+        "mcp": false,
+        "access_first_pass": "unknown"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developers.google.com/google-ads",
+        "https://www.freepeople.com/"
+      ]
+    },
+    {
+      "id": 35,
+      "name": "Mailchimp",
+      "gold": {
+        "auth": [
+          "api_key",
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://mailchimp.com/developer",
+        "https://mailchimp.com/pricing/marketing/"
+      ]
+    },
+    {
+      "id": 41,
+      "name": "Shopify",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://shopify.dev",
+        "https://www.shopify.com/pricing"
+      ]
+    },
+    {
+      "id": 49,
+      "name": "Amazon Selling Partner",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": true,
+        "verdict_before": false,
+        "verdict_after": true
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://developer-docs.amazon.com/sp-api",
+        "https://developer.amazonservices.com/register"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "gold": {
+        "auth": [
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://docs.firecrawl.dev/api-reference/introduction",
+        "https://www.firecrawl.dev/"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "gold": {
+        "auth": [
+          "api_key",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "paid-plan",
+        "verdict": "buildable-with-friction",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": false,
+        "verdict_before": true,
+        "verdict_after": false
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://docs.apify.com/api/v2",
+        "https://docs.apify.com/api"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "gold": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "not-an-api",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://docs.github.com/rest",
+        "https://github.com/pricing"
+      ]
+    },
+    {
+      "id": 71,
+      "name": "Notion",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "paid-plan"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": true,
+        "verdict_before": false,
+        "verdict_after": true
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://developers.notion.com",
+        "https://www.notion.com/pricing"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": true,
+        "access_first_pass": "admin-approval"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://linear.app/developers",
+        "https://linear.app/docs/api-and-webhooks"
+      ]
+    },
+    {
+      "id": 81,
+      "name": "Stripe",
+      "gold": {
+        "auth": [
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://stripe.com/docs/api",
+        "https://stripe.com/pricing"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "gold": {
+        "auth": [
+          "api_key"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": false,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/docs/"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "gold": {
+        "auth": [
+          "other"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "token"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false,
+        "access_first_pass": "partner-gated"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://pitchbook.com",
+        "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+      ]
+    },
+    {
+      "id": 98,
+      "name": "Mermaid CLI",
+      "gold": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "not-an-api",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "not-an-api",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://github.com/mermaid-js/mermaid-cli",
+        "https://github.com/marketplace/actions/setup-mermaid-cli"
+      ]
+    }
+  ],
+  "misses": [
+    {
+      "id": 1,
+      "name": "Salesforce",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": false,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://salesforce.com",
+        "https://www.salesforce.com/pricing/"
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Zendesk",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token",
+          "basic"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2",
+          "api_key",
+          "basic"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false,
+        "access_first_pass": "admin-approval"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+        "https://developer.zendesk.com/api-reference/"
+      ]
+    },
+    {
+      "id": 21,
+      "name": "Slack",
+      "gold": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": false,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://slack.com",
+        "https://slack.com/pricing"
+      ]
+    },
+    {
+      "id": 22,
+      "name": "Twilio",
+      "gold": {
+        "auth": [
+          "basic",
+          "api_key"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": false,
+        "access_before": false,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://twilio.com",
+        "https://www.twilio.com/en-us/pricing"
+      ]
+    },
+    {
+      "id": 28,
+      "name": "WhatsApp Business",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "unknown",
+        "verdict": "buildable-with-friction",
+        "mcp": false,
+        "access_first_pass": "unknown"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+        "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform"
+      ]
+    },
+    {
+      "id": 31,
+      "name": "Google Ads",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://developers.google.com/google-ads",
+        "https://www.freepeople.com/"
+      ]
+    },
+    {
+      "id": 56,
+      "name": "Firecrawl",
+      "gold": {
+        "auth": [
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://docs.firecrawl.dev/api-reference/introduction",
+        "https://www.firecrawl.dev/"
+      ]
+    },
+    {
+      "id": 55,
+      "name": "Apify",
+      "gold": {
+        "auth": [
+          "api_key",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "paid-plan",
+        "verdict": "buildable-with-friction",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": false,
+        "verdict_before": true,
+        "verdict_after": false
+      },
+      "changed_by_loop": true,
+      "evidence": [
+        "https://docs.apify.com/api/v2",
+        "https://docs.apify.com/api"
+      ]
+    },
+    {
+      "id": 58,
+      "name": "Sherlock",
+      "gold": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "not-an-api",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": false,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://github.com/sherlock-project/sherlock",
+        "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api"
+      ]
+    },
+    {
+      "id": 61,
+      "name": "GitHub",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "token"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "none"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://docs.github.com/rest",
+        "https://github.com/pricing"
+      ]
+    },
+    {
+      "id": 73,
+      "name": "Linear",
+      "gold": {
+        "auth": [
+          "oauth2",
+          "api_key"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "admin-approval",
+        "verdict": "buildable-with-friction",
+        "mcp": true,
+        "access_first_pass": "admin-approval"
+      },
+      "correct": {
+        "auth": true,
+        "mcp": true,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": false,
+        "verdict_after": false
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://linear.app/developers",
+        "https://linear.app/docs/api-and-webhooks"
+      ]
+    },
+    {
+      "id": 82,
+      "name": "Plaid",
+      "gold": {
+        "auth": [
+          "api_key"
+        ],
+        "access": "self-serve-trial",
+        "verdict": "buildable-now",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "oauth2"
+        ],
+        "access": "self-serve-free",
+        "verdict": "buildable-now",
+        "mcp": true,
+        "access_first_pass": "self-serve-free"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": false,
+        "access_before": false,
+        "access_after": false,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://plaid.com/docs/api/",
+        "https://plaid.com/docs/"
+      ]
+    },
+    {
+      "id": 90,
+      "name": "PitchBook",
+      "gold": {
+        "auth": [
+          "other"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false
+      },
+      "agent": {
+        "auth": [
+          "token"
+        ],
+        "access": "partner-gated",
+        "verdict": "blocked",
+        "mcp": false,
+        "access_first_pass": "partner-gated"
+      },
+      "correct": {
+        "auth": false,
+        "mcp": true,
+        "access_before": true,
+        "access_after": true,
+        "verdict_before": true,
+        "verdict_after": true
+      },
+      "changed_by_loop": false,
+      "evidence": [
+        "https://pitchbook.com",
+        "https://documenter.getpostman.com/view/5190535/TzCV1iRc"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3214 @@
+[
+  {
+    "id": 1,
+    "name": "Salesforce",
+    "category": "CRM and Sales",
+    "hint": "salesforce.com",
+    "one_liner": "Salesforce provides a powerful AI-driven CRM solution that integrates various business functions to enhance customer interactions.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://www.salesforce.com/headless/",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://salesforce.com",
+      "https://www.salesforce.com/pricing/"
+    ],
+    "evidence_notes": "The page mentions getting started for free, indicating a self-serve access model, and supports OAuth2 and API key authentication for its public API.",
+    "confidence": 0.8,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 2,
+    "name": "HubSpot",
+    "category": "CRM and Sales",
+    "hint": "hubspot.com",
+    "one_liner": "HubSpot provides a customer platform with various tools to help businesses scale.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://developers.hubspot.com/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.hubspot.com/docs/apps/developer-platform/build-apps/authentication/overview",
+      "https://developers.hubspot.com/docs/apps/legacy-apps/authentication/intro-to-auth",
+      "https://developers.hubspot.com/",
+      "https://www.hubspot.com/pricing/suite"
+    ],
+    "evidence_notes": "The page mentions a self-serve free option for getting started and outlines the OAuth2 and API key methods for authentication.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 3,
+    "name": "Pipedrive",
+    "category": "CRM and Sales",
+    "hint": "pipedrive.com",
+    "one_liner": "Pipedrive offers a CRM platform with various pricing plans to help users manage leads and sales efficiently.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://pipedrive.com",
+      "https://www.pipedrive.com/en/pricing"
+    ],
+    "evidence_notes": "The page mentions a free 14-day trial with no credit card required but does not specify a public API, authentication methods, or provide any additional details on access.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 4,
+    "name": "Attio",
+    "category": "CRM and Sales",
+    "hint": "attio.com",
+    "one_liner": "Attio provides a CRM platform with an API for integrating workflows and managing records.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "webhook"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://attio.com/help/reference/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://attio.com",
+      "https://docs.attio.com/rest-api/overview",
+      "https://docs.attio.com/docs/overview",
+      "https://attio.com/platform/developers",
+      "https://attio.com/pricing"
+    ],
+    "evidence_notes": "The page mentions a free plan and provides details about the API and webhooks.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 5,
+    "name": "Twenty",
+    "category": "CRM and Sales",
+    "hint": "twenty.com (open-source CRM)",
+    "one_liner": "Twenty provides tools for technical teams to build custom CRMs tailored to their specific business needs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "unknown",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://twenty.com",
+      "https://twenty.com/pricing"
+    ],
+    "evidence_notes": "The page mentions a native MCP server and OAuth for AI assistants to interact with the CRM data.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 6,
+    "name": "Podio",
+    "category": "CRM and Sales",
+    "hint": "podio.com",
+    "one_liner": "Podio is a collaborative platform that offers API integrations for task management and workflow automation.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://podio.com",
+      "https://www.progress.com/podio/pricing"
+    ],
+    "evidence_notes": "The site mentions API integrations available on free and paid plans and provides self-service signup.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 7,
+    "name": "Zoho CRM",
+    "category": "CRM and Sales",
+    "hint": "zoho.com/crm",
+    "one_liner": "Zoho CRM is a comprehensive platform for managing leads, deals, and customer relationships, enhanced with automation and AI features.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "unknown",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://zoho.com/crm",
+      "https://www.zoho.com/en-us/crm/zohocrm-pricing.html"
+    ],
+    "evidence_notes": "The page mentions 'APIs' for connecting Zoho CRM with other applications and supports a free edition, indicating self-serve access to developer credentials.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-trial->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 8,
+    "name": "Close",
+    "category": "CRM and Sales",
+    "hint": "close.com",
+    "one_liner": "Close provides CRM and sales engagement solutions with a managed service delivery model.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://apis.io/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://close.com",
+      "https://apis.io/plans/close/close-plans-pricing/"
+    ],
+    "evidence_notes": "Calls without `X-API-Key` need no key, and you can get a key by signing up without filling a form.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 9,
+    "name": "Copper",
+    "category": "CRM and Sales",
+    "hint": "copper.com",
+    "one_liner": "The Copper Developer API provides a RESTful interface for building applications that interact with Copper resources.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://copper.com",
+      "https://developer.copper.com/"
+    ],
+    "evidence_notes": "The Copper Developer API is accessible with OAuth2 authentication and available for developers to sign up and obtain keys for free.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-trial->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 10,
+    "name": "DealCloud",
+    "category": "CRM and Sales",
+    "hint": "api.docs.dealcloud.com",
+    "one_liner": "DealCloud offers custom pricing plans for its services.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "partner-gated",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://api.docs.dealcloud.com/mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "blocked",
+    "main_blocker": "Credentials gated behind partnership / contact-sales / app review.",
+    "evidence_urls": [
+      "https://api.docs.dealcloud.com/docs",
+      "https://api.docs.dealcloud.com/mcp/authentication",
+      "https://api.docs.dealcloud.com/sdk/python/authentication",
+      "https://www.capterra.com/p/139967/DealCloud/pricing/"
+    ],
+    "evidence_notes": "The page does not specify any public API or authentication methods.",
+    "confidence": 1.0,
+    "flags": [
+      "access-refined:self-serve-free->partner-gated"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 11,
+    "name": "Zendesk",
+    "category": "Support and Helpdesk",
+    "hint": "zendesk.com",
+    "one_liner": "Zendesk API allows authenticated requests using OAuth access tokens for verified users.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "basic"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developer.zendesk.com/api-reference/introduction/security-and-auth/",
+      "https://developer.zendesk.com/api-reference/",
+      "https://developer.zendesk.com/documentation/conversations/getting-started/api-authentication/"
+    ],
+    "evidence_notes": "You must be a verified user to make API requests and use OAuth tokens for authentication; the API supports both OAuth and basic authentication, but as a verified user, admin approval is required to obtain OAuth access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 12,
+    "name": "Intercom",
+    "category": "Support and Helpdesk",
+    "hint": "intercom.com",
+    "one_liner": "A customer service platform offering a Fin AI Agent for automation and support.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://developers.intercom.com/docs/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.intercom.com/docs/references/rest-api/api.intercom.io",
+      "https://developers.intercom.com/docs",
+      "https://developers.intercom.com/",
+      "https://www.intercom.com/pricing"
+    ],
+    "evidence_notes": "The platform allows a free trial with no mention of an API or authentication methods.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:paid-plan->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "paid-plan"
+  },
+  {
+    "id": 13,
+    "name": "Freshdesk",
+    "category": "Support and Helpdesk",
+    "hint": "freshdesk.com",
+    "one_liner": "Freshdesk provides a RESTful API for customer support functionality, including ticket management, utilizing API key authentication.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.freshdesk.com/",
+      "https://developers.freshdesk.com/api/",
+      "https://developers.freshworks.com/docs/app-sdk/v3.0/support_ticket/rest-apis/",
+      "https://www.freshworks.com/freshdesk/pricing/"
+    ],
+    "evidence_notes": "The Freshdesk API documentation specifies that API requests use personal API keys for authorization, and users can create their keys through their profile settings, indicating a self-serve sign-up process.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 14,
+    "name": "Front",
+    "category": "Support and Helpdesk",
+    "hint": "front.com",
+    "one_liner": "Front provides a developer API for building integrations and automations.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://front.com",
+      "https://dev.frontapp.com/docs/welcome",
+      "https://dev.frontapp.com/docs/core-api-overview",
+      "https://help.front.com/en/articles/2482",
+      "https://front.com/pricing"
+    ],
+    "evidence_notes": "The page mentions developer access and integration tools; the API supports OAuth2 and API key methods with a self-serve option to obtain credentials.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 15,
+    "name": "Pylon",
+    "category": "Support and Helpdesk",
+    "hint": "usepylon.com",
+    "one_liner": "Pylon is a pricing and feature comparison tool for AI-driven agent services.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "narrow",
+    "has_mcp": true,
+    "mcp_url": "https://www.usepylon.com/integrations/mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://usepylon.com",
+      "https://helply.com/pylon-pricing"
+    ],
+    "evidence_notes": "Pylon offers a free trial set up by a sales representative and confirms the use of an API key for public API access.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 16,
+    "name": "LiveAgent",
+    "category": "Support and Helpdesk",
+    "hint": "liveagent.com",
+    "one_liner": "LiveAgent offers help desk software with AI capabilities for managing customer support across various channels.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://www.liveagent.com/features/mcp-server/",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://liveagent.com",
+      "https://support.liveagent.com/066804-LiveAgent-API",
+      "https://support.liveagent.com/840770-Complete-API-reference",
+      "https://support.liveagent.com/911737-API-v3",
+      "https://www.liveagent.com/pricing/"
+    ],
+    "evidence_notes": "The page states a 30-day free trial is available with no credit card required, allowing developers to test before purchasing, and mentions the use of OAuth2 for secure API interactions.",
+    "confidence": 0.9,
+    "flags": [
+      "auth-recovered-from-pricing"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 17,
+    "name": "Plain",
+    "category": "Support and Helpdesk",
+    "hint": "plain.com",
+    "one_liner": "Plain is the agentic platform for orchestrating customer work, providing instant responses and insights.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "basic"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST",
+      "GraphQL"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://plain.com",
+      "https://devcommunity.x.com/t/announcing-the-launch-of-x-api-pay-per-use-pricing/256476"
+    ],
+    "evidence_notes": "The service offers OAuth2 and API key authentication, can be accessed through a free trial signup, and supports REST and GraphQL APIs for extensive integration capabilities.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 18,
+    "name": "Help Scout",
+    "category": "Support and Helpdesk",
+    "hint": "helpscout.com",
+    "one_liner": "Help Scout provides a collaborative platform for support teams to enhance efficiency and customer interaction.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://helpscout.com",
+      "https://www.helpscout.com/pricing/"
+    ],
+    "evidence_notes": "The page mentions a sign-up process to start for free, indicating self-serve access to credentials.",
+    "confidence": 0.8,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 19,
+    "name": "Gorgias",
+    "category": "Support and Helpdesk",
+    "hint": "gorgias.com",
+    "one_liner": "Gorgias provides a developer API allowing access once registered and approved for a developer account.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "narrow",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developers.gorgias.com/",
+      "https://docs.gorgias.com/en-US/rest-api-208286",
+      "https://developers.gorgias.com/reference/create-customer",
+      "https://developers.gorgias.com/docs/1-register-on-developer-portal"
+    ],
+    "evidence_notes": "You will need to have a draft app to get approved for the Sandbox Account and reach out to techpartners@gorgias.com for approval.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->admin-approval"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 20,
+    "name": "Gladly",
+    "category": "Support and Helpdesk",
+    "hint": "gladly.com",
+    "one_liner": "The Gladly API provides a RESTful interface for managing customer service interactions and agent tools.",
+    "auth_methods": [
+      "basic"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://gladly.com",
+      "https://developer.gladly.com/rest/",
+      "https://developer.gladly.com/",
+      "https://developer.gladly.com/chat/"
+    ],
+    "evidence_notes": "API tokens are generated by users with the 'API User' permission, granted by administrators, and use basic authentication with an email and token as credentials.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 21,
+    "name": "Slack",
+    "category": "Communications and Messaging",
+    "hint": "slack.com",
+    "one_liner": "Slack provides a collaborative platform that integrates messaging, file sharing, and apps into team workflow.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://slack.dev/",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://slack.com",
+      "https://slack.com/pricing"
+    ],
+    "evidence_notes": "The Slack API uses OAuth2 for authentication, and developers can sign up for a free plan to get API access.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 22,
+    "name": "Twilio",
+    "category": "Communications and Messaging",
+    "hint": "twilio.com",
+    "one_liner": "Twilio offers a platform for building communication applications with a pay-as-you-go pricing model after a free trial.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://www.twilio.com/docs",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://twilio.com",
+      "https://www.twilio.com/en-us/pricing"
+    ],
+    "evidence_notes": "The page mentions a free trial is available with no credit card required, indicating a self-serve trial model.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 23,
+    "name": "Zoho Cliq",
+    "category": "Communications and Messaging",
+    "hint": "zoho.com/cliq",
+    "one_liner": "Zoho Cliq is an all-in-one UCaaS solution for modern teams.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://zoho.com/cliq",
+      "https://www.zoho.com/cliq/pricing.html"
+    ],
+    "evidence_notes": "The page does not mention any public developer API or required authentication methods.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-trial->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 24,
+    "name": "Lark (Larksuite)",
+    "category": "Communications and Messaging",
+    "hint": "open.larksuite.com",
+    "one_liner": "Lark provides an open ecosystem for building customized workplace experiences through extensive APIs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://open.larksuite.com/document/mcp_open_tools/feishu-cli-let-ai-actually-do-your-work-in-feishu",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://open.larksuite.com",
+      "https://www.larksuite.com/en_us/plans"
+    ],
+    "evidence_notes": "The page mentions an open and accessible way to reshape experiences and details APIs available, indicating a straightforward sign-up process.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 25,
+    "name": "Pumble",
+    "category": "Communications and Messaging",
+    "hint": "pumble.com",
+    "one_liner": "Pumble provides a communication platform with various collaboration features suitable for teams.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": true,
+    "mcp_url": "https://pumble.com/mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://pumble.com",
+      "https://pumble.com/help/integrations/automation-workflow-integrations/api-keys-integration/",
+      "https://pumble.com/learn/pumble/ai-automation-guide/",
+      "https://dev-docs.marketplace.cake.com/pumble/build/api-client.html",
+      "https://pumble.com/pricing"
+    ],
+    "evidence_notes": "The site mentions that you can get started for free and use the service without limitations, indicating a self-serve approach for obtaining access.",
+    "confidence": 0.9,
+    "flags": [
+      "auth-recovered-from-pricing"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 26,
+    "name": "Discord",
+    "category": "Communications and Messaging",
+    "hint": "discord.com",
+    "one_liner": "Discord offers a free API access for developers, supporting various functionalities for community and gaming applications.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://apis.io/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://discord.com",
+      "https://docs.discord.com/developers/reference",
+      "https://docs.discord.com/developers/topics/oauth2",
+      "https://docs.discord.com/developers/intro",
+      "https://apis.io/plans/discord/discord-plans-pricing/"
+    ],
+    "evidence_notes": "API access is free for developers and there is no mention of a paid API for initial access. Signing up is not required for API usage, hence labeled self-serve-free.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 27,
+    "name": "Telegram",
+    "category": "Communications and Messaging",
+    "hint": "core.telegram.org",
+    "one_liner": "",
+    "auth_methods": [],
+    "access_model": "unknown",
+    "api_type": [],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "API docs unclear or not found — needs manual confirmation.",
+    "evidence_urls": [
+      "https://core.telegram.org/",
+      "https://core.telegram.org/bots/api",
+      "https://core.telegram.org/api/obtaining_api_id"
+    ],
+    "evidence_notes": "",
+    "confidence": 0.0,
+    "flags": [
+      "extract-failed",
+      "low-confidence"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "unknown"
+  },
+  {
+    "id": 28,
+    "name": "WhatsApp Business",
+    "category": "Communications and Messaging",
+    "hint": "developers.facebook.com/docs/whatsapp",
+    "one_liner": "The WhatsApp Business Platform allows businesses to communicate with customers using APIs for messaging and calls.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "unknown",
+    "api_type": [
+      "REST",
+      "webhook"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Access model unclear from docs — needs manual confirmation.",
+    "evidence_urls": [
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/get-started",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/about-the-platform",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/overview",
+      "https://developers.facebook.com/documentation/business-messaging/whatsapp/pricing"
+    ],
+    "evidence_notes": "Authentication uses OAuth access tokens for API access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "unknown"
+  },
+  {
+    "id": 29,
+    "name": "Aircall",
+    "category": "Communications and Messaging",
+    "hint": "aircall.io",
+    "one_liner": "Aircall provides a customer communication platform featuring AI Voice Agents to enhance call handling and integrate with various business systems.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://aircall.io/get-started/",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.aircall.io/api-references",
+      "https://developer.aircall.io/",
+      "https://aircall.io/call-center-software-features/webhooks-api/",
+      "https://aircall.io/pricing/"
+    ],
+    "evidence_notes": "The page indicates that Aircall offers free access to test the platform, and APIs are included for all plans.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 30,
+    "name": "Vonage",
+    "category": "Communications and Messaging",
+    "hint": "developer.vonage.com",
+    "one_liner": "Vonage offers a variety of communication APIs with usage-based pricing.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developer.vonage.com/en/home",
+      "https://developer.vonage.com/en/documentation",
+      "https://www.vonage.com/developer-center/",
+      "https://www.vonage.com/communications-apis/pricing/"
+    ],
+    "evidence_notes": "The page states 'Start developing now with free credit. No credit card required.' indicating self-serve access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 31,
+    "name": "Google Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.google.com/google-ads",
+    "one_liner": "Free People is a specialty women's clothing brand that offers boho fashion and accessories.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.google.com/google-ads",
+      "https://www.freepeople.com/"
+    ],
+    "evidence_notes": "No information about public API or authentication methods is provided on the page.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 32,
+    "name": "Meta Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/marketing-apis",
+    "one_liner": "The Marketing API allows developers to manage ads within WhatsApp Status and other platforms.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developers.facebook.com/docs/marketing-apis",
+      "https://developers.facebook.com/documentation/ads-commerce/marketing-api/get-started"
+    ],
+    "evidence_notes": "Developers must have an active ad account and a Meta Developer account, along with obtaining permissions to access the API.",
+    "confidence": 1.0,
+    "flags": [
+      "access-refined:self-serve-free->admin-approval"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 33,
+    "name": "LinkedIn Ads",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "learn.microsoft.com/linkedin/marketing",
+    "one_liner": "The LinkedIn Marketing API allows businesses to manage, track, and optimize marketing campaigns on LinkedIn.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://learn.microsoft.com/linkedin/marketing",
+      "https://www.outstand.so/blog/linkedin-api-pricing"
+    ],
+    "evidence_notes": "The LinkedIn Marketing API requires OAuth2 for authentication and provides a self-serve method for obtaining credentials.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 34,
+    "name": "GoHighLevel",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "highlevel.stoplight.io",
+    "one_liner": "HighLevel is an all-in-one platform for managing customer relationships, marketing, and automation.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://help.gohighlevel.com/support/solutions/articles/48001060529-highlevel-api-documentation",
+      "https://marketplace.gohighlevel.com/docs/",
+      "https://benchling.com/gohighlevel/f/lib_PXRgrNkov5-gohighlevel/etr_SrJEMhuEUs-gohighlevel-api-documentation-complete-guide-features-free-trial/edit?m=slm-lTtYqR1nQkc0ibDmGoDl",
+      "https://www.gohighlevel.com/pricing"
+    ],
+    "evidence_notes": "The page mentions only a 14-day free trial and no mention of public API authentication methods.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 35,
+    "name": "Mailchimp",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "mailchimp.com/developer",
+    "one_liner": "Mailchimp provides a developer API for integrating marketing tools and transactional email services.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://mailchimp.com/developer",
+      "https://mailchimp.com/pricing/marketing/"
+    ],
+    "evidence_notes": "The documentation states that developers can sign up and access the API without any mention of additional barriers.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 36,
+    "name": "Klaviyo",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.klaviyo.com",
+    "one_liner": "Klaviyo provides a marketing platform for email, SMS, and social media management.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.klaviyo.com/",
+      "https://developers.klaviyo.com/en/reference/api_overview",
+      "https://developers.klaviyo.com/en/docs/authenticate_",
+      "https://www.klaviyo.com/pricing"
+    ],
+    "evidence_notes": "The page describes various pricing plans and the free plan available, but does not mention a public developer API or authentication methods.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 37,
+    "name": "systeme.io",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "systeme.io (funnel builder)",
+    "one_liner": "Systeme.io provides an all-in-one platform for building online business tools, including marketing and sales functions.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "narrow",
+    "has_mcp": true,
+    "mcp_url": "https://developer.systeme.io/reference/api",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://help.systeme.io/article/2323-how-to-create-a-public-api-key-on-systeme-io",
+      "https://apps.make.com/systeme-io",
+      "https://rollout.com/integration-guides/systeme.io/sdk/step-by-step-guide-to-building-a-systeme.io-api-integration-in-go",
+      "https://systeme.io/pricing"
+    ],
+    "evidence_notes": "The page indicates a public API that allows for key creation without specifying authentication methods, and developers can start for free without admin approval or contact needed.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 38,
+    "name": "Pinterest",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.pinterest.com",
+    "one_liner": "The Pinterest API allows developers to create, read, and manage Pins and Boards, along with analytics and advertising functionalities.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.pinterest.com/",
+      "https://developers.pinterest.com/docs/api/v5/introduction/?",
+      "https://developers.pinterest.com/docs/getting-started/set-up-authentication-and-authorization/",
+      "https://www.blotato.com/blog/pinterest-api-pricing"
+    ],
+    "evidence_notes": "Trial and Standard tiers cost nothing, with Trial access granted upon review and Standard requiring a video demo.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 39,
+    "name": "Threads (Meta)",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "developers.facebook.com/docs/threads",
+    "one_liner": "The Threads API allows developers to interact with Threads features using user access tokens obtained through OAuth 2.0 authentication.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://developers.facebook.com/documentation/mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.facebook.com/documentation/threads/",
+      "https://developers.facebook.com/documentation/threads/get-started/",
+      "https://developers.facebook.com/documentation/threads.md/",
+      "https://developers.facebook.com/documentation/threads/get-started"
+    ],
+    "evidence_notes": "Access tokens are user-specific and follow the OAuth 2.0 protocol, with developers obtaining them via the Authorization Window after app user permissions are granted.",
+    "confidence": 0.95,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 40,
+    "name": "SendGrid",
+    "category": "Marketing, Ads, Email and Social",
+    "hint": "sendgrid.com",
+    "one_liner": "Twilio SendGrid Email API allows users to send bulk emails with integrated analytics and deliverability features.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://sendgrid.com",
+      "https://www.twilio.com/docs/sendgrid/api-reference",
+      "https://www.twilio.com/en-us/products/email-api",
+      "https://login.sendgrid.com/",
+      "https://www.twilio.com/en-us/products/email-api/pricing"
+    ],
+    "evidence_notes": "Sign up for a free trial—no credit card required; the plan specifies a free trial allowing limited usage before payment is required.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 41,
+    "name": "Shopify",
+    "category": "Ecommerce",
+    "hint": "shopify.dev",
+    "one_liner": "Shopify is an all-in-one commerce platform that lets you create an online store and sell in various channels including AI chats.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://shopify.dev/docs/apps/build/ai-toolkit",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://shopify.dev",
+      "https://www.shopify.com/pricing"
+    ],
+    "evidence_notes": "Shopify provides a 3-day free trial with month-to-month plans thereafter, making it accessible without initial costs.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 42,
+    "name": "WooCommerce",
+    "category": "Ecommerce",
+    "hint": "woocommerce.com/document/woocommerce-rest-api",
+    "one_liner": "WooCommerce is a free, Open Source ecommerce platform for WordPress that allows users to build custom online stores with control over costs.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developer.woocommerce.com/docs/apis/rest-api/",
+      "https://woocommerce.com/document/woocommerce-rest-api/",
+      "https://developer.woocommerce.com/docs/apis/rest-api/authentication/",
+      "https://woocommerce.com/pricing/"
+    ],
+    "evidence_notes": "The page states WooCommerce is free to download and use with no public API mentioned.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 43,
+    "name": "BigCommerce",
+    "category": "Ecommerce",
+    "hint": "developer.bigcommerce.com",
+    "one_liner": "BigCommerce offers a platform for building and managing online storefronts with various pricing plans.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://docs.bigcommerce.com/developer/api-reference/about-our-apis",
+      "https://docs.bigcommerce.com/",
+      "https://docs.bigcommerce.com/developer/docs/overview/api-fundamentals/api-accounts",
+      "https://www.bigcommerce.com/pricing/"
+    ],
+    "evidence_notes": "The website mentions a fully functional 15-day free trial, which allows users to set up a store and process transactions without a credit card.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-trial->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 44,
+    "name": "Salesforce Commerce Cloud",
+    "category": "Ecommerce",
+    "hint": "developer.salesforce.com/docs/commerce",
+    "one_liner": "The Custom API provides a secure authentication mechanism for developers to implement their business logic and manage custom API operations.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/custom-api-authentication.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/guide/authorization.html",
+      "https://developer.salesforce.com/docs/commerce/commerce-api/references/auth"
+    ],
+    "evidence_notes": "Custom API clients must obtain a token with the required scope, and authorization is managed through OAuth 2.0 using tokens for different scopes.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 45,
+    "name": "Magento (Adobe Commerce)",
+    "category": "Ecommerce",
+    "hint": "developer.adobe.com/commerce",
+    "one_liner": "The Adobe Commerce REST API allows developers to integrate commerce functionalities across various applications.",
+    "auth_methods": [
+      "oauth2",
+      "token"
+    ],
+    "access_model": "unknown",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Access model unclear from docs — needs manual confirmation.",
+    "evidence_urls": [
+      "https://developer.adobe.com/commerce/webapi/rest/",
+      "https://developer.adobe.com/commerce/webapi/get-started/",
+      "https://developer.adobe.com/commerce/webapi/get-started/authentication/",
+      "https://www.i95dev.com/magento-adobe-commerce-pricing-revealed-i95dev/"
+    ],
+    "evidence_notes": "The API supports multiple authentication methods including OAuth 1.0a and token authentication, but the access model for obtaining credentials is not explicitly stated.",
+    "confidence": 0.8,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "unknown"
+  },
+  {
+    "id": 46,
+    "name": "Squarespace",
+    "category": "Ecommerce",
+    "hint": "developers.squarespace.com",
+    "one_liner": "Squarespace offers website building and eCommerce solutions with a range of customizable plans.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.squarespace.com/",
+      "https://developers.squarespace.com/commerce-apis/overview",
+      "https://developers.squarespace.com/commerce-apis/authentication-and-permissions",
+      "https://www.squarespace.com/pricing"
+    ],
+    "evidence_notes": "No mention of a public API or authentication methods; you can start a free trial without a credit card.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 47,
+    "name": "Ecwid",
+    "category": "Ecommerce",
+    "hint": "api-docs.ecwid.com",
+    "one_liner": "Ecwid provides a public developer API that allows custom applications to access store data without additional authentication, requiring a paid store for access.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.ecwid.com/api-reference",
+      "https://docs.ecwid.com/",
+      "https://docs.ecwid.com/get-started/api-glossary",
+      "https://docs.ecwid.com/get-started/set-up-your-dev-environment-in-ecwid"
+    ],
+    "evidence_notes": "API access requires a store on a paid plan, but a free upgrade to a paid plan is available for development purposes.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 48,
+    "name": "Gumroad",
+    "category": "Ecommerce",
+    "hint": "gumroad.com/api",
+    "one_liner": "Gumroad provides a public API for managing sales, products, and user accounts with OAuth-based authentication.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://gumroad.com/api",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://gumroad.com/api",
+      "https://www.swell.is/content/gumroad-pricing"
+    ],
+    "evidence_notes": "The documentation specifies that OAuth is used for authentication and that developers can sign up to receive a free access token.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 49,
+    "name": "Amazon Selling Partner",
+    "category": "Ecommerce",
+    "hint": "developer-docs.amazon.com/sp-api",
+    "one_liner": "The Selling Partner API allows developers to register applications for use by sellers or vendors using OAuth authentication.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developer-docs.amazon.com/sp-api",
+      "https://developer.amazonservices.com/register"
+    ],
+    "evidence_notes": "Public developers must list their app in the Amazon Selling Partner Appstore, indicating admin approval is necessary.",
+    "confidence": 1.0,
+    "flags": [
+      "access-refined:self-serve-free->admin-approval"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 50,
+    "name": "fanbasis",
+    "category": "Ecommerce",
+    "hint": "fanbasis.com",
+    "one_liner": "Sign in required to access API documentation.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://fanbasis.com",
+      "https://dev-docs.fanbasis.com/",
+      "https://commasdocs.com/",
+      "https://www.tarvent.com/integrations/fanbasis"
+    ],
+    "evidence_notes": "No details on public API authentication or access methods are provided on the page.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 51,
+    "name": "DataForSEO",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.dataforseo.com",
+    "one_liner": "DataForSEO offers pay-as-you-go APIs for various SEO data services without subscriptions.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.dataforseo.com",
+      "https://dataforseo.com/pricing"
+    ],
+    "evidence_notes": "The page states users can sign up for a free account and use a $1 trial credit.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 52,
+    "name": "SE Ranking",
+    "category": "Data, SEO and Scraping",
+    "hint": "seranking.com/api",
+    "one_liner": "The SE Ranking API allows users to programmatically access SEO data using a unique API key for authentication.",
+    "auth_methods": [
+      "token"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://seranking.com/api",
+      "https://seranking.com/api/data/getting-started/",
+      "https://seranking.com/api/se-visible/getting-started/",
+      "https://seranking.com/api.html",
+      "https://seranking.com/api-pricing.html"
+    ],
+    "evidence_notes": "Users can generate a unique API key from their account dashboard, confirming that it follows a self-serve model.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 53,
+    "name": "Ahrefs",
+    "category": "Data, SEO and Scraping",
+    "hint": "ahrefs.com/api",
+    "one_liner": "Access Ahrefs marketing and search data through APIs for custom integrations and workflows.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://docs.ahrefs.com/en/mcp/docs/introduction",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://ahrefs.com/api",
+      "https://ahrefs.com/pricing"
+    ],
+    "evidence_notes": "The page describes the use of API keys and OAuth for authentication, and mentions free test queries without an Enterprise plan.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 54,
+    "name": "MrScraper",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.mrscraper.com",
+    "one_liner": "MrScraper turns websites into clean, structured data with AI-powered scraping, APIs, proxies, and automation.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.mrscraper.com/docs/api/authentication",
+      "https://docs.mrscraper.com/docs/api/overview",
+      "https://docs.mrscraper.com/",
+      "https://mrscraper.com/pricing"
+    ],
+    "evidence_notes": "Developers can get their API token from the dashboard and the Scraper Free plan offers 1,000 tokens at no cost.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 55,
+    "name": "Apify",
+    "category": "Data, SEO and Scraping",
+    "hint": "docs.apify.com",
+    "one_liner": "The Creator plan allows developers to build and publish their own Actors on the Apify platform.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "paid-plan",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://docs.apify.com/platform/integrations/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "API access requires a paid plan.",
+    "evidence_urls": [
+      "https://docs.apify.com/api/v2",
+      "https://docs.apify.com/api",
+      "https://docs.apify.com/",
+      "https://apify.com/pricing/creator-plan"
+    ],
+    "evidence_notes": "The page details the paid Creator plan for developers, indicating no free access to a public API and authentication methods are not mentioned.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->paid-plan"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 56,
+    "name": "Firecrawl",
+    "category": "Data, SEO and Scraping",
+    "hint": "firecrawl.dev",
+    "one_liner": "Alexandria offers a public API for web scraping and data interaction, allowing users to start for free before scaling up with paid plans.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://docs.firecrawl.dev/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.firecrawl.dev/api-reference/introduction",
+      "https://www.firecrawl.dev/",
+      "https://docs.firecrawl.dev/introduction",
+      "https://www.firecrawl.dev/pricing"
+    ],
+    "evidence_notes": "The page mentions a free plan with no credit card required.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 57,
+    "name": "Bright Data",
+    "category": "Data, SEO and Scraping",
+    "hint": "brightdata.com",
+    "one_liner": "Bright Data provides API Access and Native Access methods for secure service authentication.",
+    "auth_methods": [
+      "api_key",
+      "basic"
+    ],
+    "access_model": "paid-plan",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "API access requires a paid plan.",
+    "evidence_urls": [
+      "https://docs.brightdata.com/introduction",
+      "https://docs.brightdata.com/products/scraper-studio/quickstart",
+      "https://brightdata.com/",
+      "https://brightdata.com/pricing/web-scraper"
+    ],
+    "evidence_notes": "An API key is created upon account creation; additional keys can be generated by admin users only.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "paid-plan"
+  },
+  {
+    "id": 58,
+    "name": "Sherlock",
+    "category": "Data, SEO and Scraping",
+    "hint": "github.com/sherlock-project/sherlock",
+    "one_liner": "Xero provides a public API with tiered plans for developers to connect and integrate with its services.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://github.com/sherlock-project/sherlock",
+      "https://docs.github.com/en/rest/authentication/authenticating-to-the-rest-api",
+      "https://docs.github.com/rest",
+      "https://docs.github.com/en/apps/oauth-apps/building-oauth-apps/authenticating-to-the-rest-api-with-an-oauth-app",
+      "https://developer.xero.com/pricing"
+    ],
+    "evidence_notes": "The page states OAuth 2.0 is used for authorization and highlights a self-serve model for app registration.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": true,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 59,
+    "name": "Waterfall.io",
+    "category": "Data, SEO and Scraping",
+    "hint": "waterfall.io (contact/company intel)",
+    "one_liner": "Waterfall provides a real-time email verification service through a unified API with a credit-based billing model.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://waterfall.io",
+      "https://www.waterfall.io/pricing"
+    ],
+    "evidence_notes": "The API does not specify traditional authentication methods and offers a benchmark service for users before committing to a contract.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 60,
+    "name": "Clay",
+    "category": "Data, SEO and Scraping",
+    "hint": "clay.com",
+    "one_liner": "The Clay Public API requires a personal API key for authentication.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://clay.com",
+      "https://developers.clay.com/public-api/authentication",
+      "https://university.clay.com/docs/http-api-integration-overview",
+      "https://university.clay.com/docs/http-api-with-jwt-authentication-integration-overview",
+      "https://www.clay.com/pricing"
+    ],
+    "evidence_notes": "Every request must include a Clay API key in the 'clay-api-key' header, and API keys are tied to a user and workspace access, which can be created through self-serve methods.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 61,
+    "name": "GitHub",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.github.com/rest",
+    "one_liner": "GitHub provides a platform for version control and collaboration, allowing developers to manage their code effectively.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://github.com/github/github-mcp-server",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.github.com/rest",
+      "https://github.com/pricing"
+    ],
+    "evidence_notes": "The page does not mention a public developer API or any authentication methods; access is self-serve and free for individuals.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 62,
+    "name": "Vercel",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "vercel.com/docs/rest-api",
+    "one_liner": "The Vercel REST API allows programmatic interaction with Vercel accounts for deployment and resource management.",
+    "auth_methods": [
+      "token"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://vercel.com/docs/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://vercel.com/docs/rest-api",
+      "https://vercel.com/docs/ai-gateway/pricing"
+    ],
+    "evidence_notes": "Access Tokens are required for authentication, which can be created in account settings, implying self-serve access.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 63,
+    "name": "Netlify",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.netlify.com/api",
+    "one_liner": "Netlify allows developers to build and deploy applications with built-in tools for performance and collaboration.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://open-api.netlify.com/",
+      "https://docs.netlify.com/api-and-cli-guides/api-guides/get-started-with-api/",
+      "https://docs.netlify.com/",
+      "https://www.netlify.com/pricing/"
+    ],
+    "evidence_notes": "The page mentions that developers can start for free and explains various usage plans including a free option, indicating self-service access to the API through an API key.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 64,
+    "name": "Cloudflare",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "developers.cloudflare.com/api",
+    "one_liner": "Cloudflare provides a platform for deploying serverless applications and managing web infrastructure with a focus on security and performance.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": true,
+    "mcp_url": "https://developers.cloudflare.com/agents/model-context-protocol/",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.cloudflare.com/",
+      "https://developers.cloudflare.com/api/",
+      "https://developers.cloudflare.com/analytics/graphql-api/getting-started/authentication/api-key-auth/",
+      "https://www.cloudflare.com/plans/"
+    ],
+    "evidence_notes": "The page mentions that there is a free option for developers without specifying authentication methods or needing admin approval for API access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 65,
+    "name": "Supabase",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "supabase.com/docs",
+    "one_liner": "Supabase provides a platform with a public API to build applications and manage databases with scalable options.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://supabase.com/docs/guides/getting-started/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://supabase.com/docs/guides/api",
+      "https://supabase.com/docs",
+      "https://supabase.com/docs/guides/auth",
+      "https://supabase.com/pricing"
+    ],
+    "evidence_notes": "The page indicates features such as unlimited API requests and supports OAuth 2.1, which is a standard authentication method.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 66,
+    "name": "Neo4j",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "neo4j.com/docs/api",
+    "one_liner": "Neo4j offers a powerful graph database platform, ideal for building connected data applications.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "token"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "GraphQL"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://neo4j.com/docs/developer-manual/current/http-api/authentication/",
+      "https://neo4j.com/docs/http-api/current/authentication-authorization/",
+      "https://neo4j.com/docs/operations-manual/current/authentication-authorization/",
+      "https://neo4j.com/pricing/"
+    ],
+    "evidence_notes": "The pricing page mentions free access to AuraDB and capabilities for developers to sign up for credentials without payment. Authentication methods like OAuth2 and API keys are indicated.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 67,
+    "name": "Snowflake",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.snowflake.com",
+    "one_liner": "Snowflake provides a cloud data platform with a consumption-based pricing model for data storage and processing.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.snowflake.com/en/api-reference",
+      "https://docs.snowflake.com/en/developer-guide/snowflake-rest-api/snowflake-rest-api",
+      "https://docs.snowflake.com/en/developer-guide/sql-api/index",
+      "https://www.snowflake.com/en/pricing-options/"
+    ],
+    "evidence_notes": "Developers can sign up for a free account to access the platform and usage-based billing.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 68,
+    "name": "MongoDB Atlas",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "mongodb.com/docs/atlas/api",
+    "one_liner": "MongoDB provides a fully managed cloud database service suitable for various applications including scalable full-text search and AI workloads.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://mongodb.com/docs/atlas/api",
+      "https://www.mongodb.com/pricing"
+    ],
+    "evidence_notes": "MongoDB Atlas offers a free tier (M0) for learning and exploring without authentication requirements, suitable for immediate access by developers.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 69,
+    "name": "Datadog",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.datadoghq.com/api",
+    "one_liner": "Datadog provides a comprehensive observability platform for IT and DevOps teams to monitor infrastructure, security, and application performance in real-time.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://www.datadoghq.com/product/ai/mcp-server/",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://docs.datadoghq.com/api",
+      "https://www.datadoghq.com/pricing/"
+    ],
+    "evidence_notes": "The page specifies 'api_key' and 'oauth2' as authentication methods and mentions a free tier for initial access.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 70,
+    "name": "Sentry",
+    "category": "Developer, Infra and Data platforms",
+    "hint": "docs.sentry.io/api",
+    "one_liner": "Sentry's API requires an authentication token that can be created through organizational internal integrations.",
+    "auth_methods": [
+      "token"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "narrow",
+    "has_mcp": true,
+    "mcp_url": "https://docs.sentry.io/product/sentry-mcp/",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://docs.sentry.io/api/auth/",
+      "https://docs.sentry.io/api/",
+      "https://docs.sentry.io/account/auth-tokens/"
+    ],
+    "evidence_notes": "Developers need an organization-level role of Manager or Admin for token creation, indicating admin approval is necessary.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 71,
+    "name": "Notion",
+    "category": "Productivity and Project Management",
+    "hint": "developers.notion.com",
+    "one_liner": "Notion provides a platform for organizing projects and tasks through its collaborative workspace features.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://developers.notion.com/docs/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.notion.com",
+      "https://www.notion.com/pricing"
+    ],
+    "evidence_notes": "The page mentions a public API and access through OAuth2, alongside free self-serve options for signing up and obtaining access.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:paid-plan->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "paid-plan"
+  },
+  {
+    "id": 72,
+    "name": "Airtable",
+    "category": "Productivity and Project Management",
+    "hint": "airtable.com/developers",
+    "one_liner": "Airtable provides a flexible workspace for organization needs with a tiered pricing model and API access.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://airtable.com/developers/web/api/introduction",
+      "https://support.airtable.com/collections/5274326156-api",
+      "https://airtable.com/developers/web/api",
+      "https://airtable.com/pricing"
+    ],
+    "evidence_notes": "The page details pricing plans but does not specify an API authentication method or mention an official MCP server.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 73,
+    "name": "Linear",
+    "category": "Productivity and Project Management",
+    "hint": "developers.linear.app",
+    "one_liner": "Linear’s public API allows developers to extend functionality and receive notifications for data changes via a GraphQL API and webhooks.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "GraphQL",
+      "webhook"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://linear.app/docs/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://linear.app/developers",
+      "https://linear.app/docs/api-and-webhooks",
+      "https://linear.app/developers/oauth-2-0-authentication"
+    ],
+    "evidence_notes": "Admins control the creation of API keys, which indicates admin approval is necessary for access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 74,
+    "name": "Jira",
+    "category": "Productivity and Project Management",
+    "hint": "developer.atlassian.com",
+    "one_liner": "Jira provides a platform for collaboration and project management.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://www.atlassian.com/platform/remote-mcp-server",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developer.atlassian.com/cloud/jira/platform/rest/v3/intro/",
+      "https://developer.atlassian.com/cloud/jira/platform/basic-auth-for-rest-apis/",
+      "https://developer.atlassian.com/",
+      "https://www.atlassian.com/try/cloud/signup"
+    ],
+    "evidence_notes": "The page mentions sign up using a work email or Google, indicating self-serve access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 75,
+    "name": "Asana",
+    "category": "Productivity and Project Management",
+    "hint": "developers.asana.com",
+    "one_liner": "Asana's API provides various authentication methods for developers to interact programmatically with the service.",
+    "auth_methods": [
+      "oauth2",
+      "api_key",
+      "basic",
+      "token"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://developers.asana.com/docs/mcp-server",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.asana.com/docs/authentication",
+      "https://asana.com/developers",
+      "https://developers.asana.com/docs/oauth",
+      "https://asana.com/pricing"
+    ],
+    "evidence_notes": "Developers can generate personal access tokens (PATs) and access the API freely through the developer console, indicating a self-serve model.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 76,
+    "name": "Monday.com",
+    "category": "Productivity and Project Management",
+    "hint": "developer.monday.com",
+    "one_liner": "monday.com provides tools to manage workflows and automate tasks through AI-powered features.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developer.monday.com/api-reference/",
+      "https://developer.monday.com/api-reference/docs/authentication",
+      "https://developer.monday.com/",
+      "https://monday.com/pricing"
+    ],
+    "evidence_notes": "The page mentions a free plan with no credit card needed, indicating a self-serve option for obtaining access.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 77,
+    "name": "ClickUp",
+    "category": "Productivity and Project Management",
+    "hint": "clickup.com/api",
+    "one_liner": "Build integrations and apps with the ClickUp Public API.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://developer.clickup.com/docs/connect-an-ai-assistant-to-clickups-mcp-server.md",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://clickup.com/api",
+      "https://clickup.com/pricing"
+    ],
+    "evidence_notes": "The ClickUp API uses OAuth for authentication and allows developers to sign up and get a key for free.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 78,
+    "name": "Coda",
+    "category": "Productivity and Project Management",
+    "hint": "coda.io/developers",
+    "one_liner": "The Superhuman Docs API is a RESTful service that allows developers to programmatically interact with documents, tables, and other resources in Superhuman Docs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://docs.superhuman.com/resources/guides/getting_started_with_coda_mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://coda.io/developers",
+      "https://www.reddit.com/r/codaio/comments/169mrxm/coda_pricing_question/"
+    ],
+    "evidence_notes": "The API uses Bearer authentication, and it is free for users with a valid token, including those in free workspaces.",
+    "confidence": 0.95,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 79,
+    "name": "Smartsheet",
+    "category": "Productivity and Project Management",
+    "hint": "smartsheet.com/developers",
+    "one_liner": "Smartsheet offers a robust platform for project management and collaboration with various plans and features.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://www.smartsheet.com/help-center?url=articles/2480681-gov-capabilities",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://smartsheet.com/developers",
+      "https://www.smartsheet.com/pricing?srsltid=AYCX9vLNtxdGVcSQwQ83-2dHw48O5vGKmBkIppCbeFOGX_pTJqrdw2eA"
+    ],
+    "evidence_notes": "The page mentions self-serve trials with an option to try for free; user authentication is facilitated through OAuth2.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:self-serve-free->self-serve-trial"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 80,
+    "name": "Harvest",
+    "category": "Productivity and Project Management",
+    "hint": "help.getharvest.com/api-v2",
+    "one_liner": "Harvest offers time tracking with a free plan for one user and paid plans that incorporate usage-based fees.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://help.getharvest.com/api-v2",
+      "https://www.timecamp.com/blog/harvest-pricing/"
+    ],
+    "evidence_notes": "Harvest has a free plan for one person with two projects and only paid plans with seat-based billing, without any mention of a public developer API.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 81,
+    "name": "Stripe",
+    "category": "Finance and Fintech",
+    "hint": "stripe.com/docs/api",
+    "one_liner": "Stripe provides a complete payments platform with flexible pricing and no setup fees.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://docs.stripe.com/mcp",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://stripe.com/docs/api",
+      "https://stripe.com/pricing"
+    ],
+    "evidence_notes": "The platform supports OAuth2 and API keys for authentication, and developers can sign up to obtain credentials without any fees, according to the pricing section.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 82,
+    "name": "Plaid",
+    "category": "Finance and Fintech",
+    "hint": "plaid.com/docs",
+    "one_liner": "Plaid provides a flexible API for connecting financial accounts to applications.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://github.com/plaid/ai-coding-toolkit/tree/main/sandbox",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://plaid.com/docs/api/",
+      "https://plaid.com/docs/",
+      "https://plaid.com/products/",
+      "https://plaid.com/pricing/"
+    ],
+    "evidence_notes": "Developers can sign up for free access via the Dashboard and test in the Sandbox without a commitment.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 83,
+    "name": "Binance",
+    "category": "Finance and Fintech",
+    "hint": "binance-docs.github.io",
+    "one_liner": "Binance provides a public API for trading digital and fiat currencies with access to various trading functionalities.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "SDK",
+      "webhook"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://github.com/binance-exchange/binance-official-api-docs",
+      "https://developers.binance.com/en/docs/",
+      "https://developers.binance.com/en/docs/products/connect-2.0/authentication-and-signing",
+      "https://www.binance.com/en/binance-api"
+    ],
+    "evidence_notes": "Developers can create/manage an API key for free and access extensive trading functionalities.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 84,
+    "name": "Paygent Connect",
+    "category": "Finance and Fintech",
+    "hint": "paygent (NMI-powered)",
+    "one_liner": "The app provides a developer API with various tiers for usage and features without paywalls.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developer.cybersource.com/api-reference-assets/index.html",
+      "https://developer.authorize.net/api/reference/index.html",
+      "https://www.globalpayments.com/developers",
+      "https://www.paygent.to/pricing"
+    ],
+    "evidence_notes": "The page states 'Start free.' indicating a self-serve option, and no authentication methods are specified.",
+    "confidence": 0.9,
+    "flags": [
+      "extract-failed",
+      "low-confidence",
+      "access-refined:unknown->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "unknown"
+  },
+  {
+    "id": 85,
+    "name": "iPayX",
+    "category": "Finance and Fintech",
+    "hint": "ipayx.ai/docs",
+    "one_liner": "iPayX offers a forensic FX audit tool that provides real-time insights into international payment costs.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST",
+      "SDK"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://www.ipayx.ai/mcp-config",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://www.ipayx.ai/docs/mcp-server",
+      "https://www.ipayx.ai/?lang=en",
+      "https://api-docs.payments.ai/",
+      "https://docs.x.com/x-api/getting-started/pricing"
+    ],
+    "evidence_notes": "Developers can generate API keys and use the service without signup for initial audits.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 86,
+    "name": "QuickBooks",
+    "category": "Finance and Fintech",
+    "hint": "developer.intuit.com",
+    "one_liner": "The Intuit API provides tools for integrating with QuickBooks services.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "partner-gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "blocked",
+    "main_blocker": "Credentials gated behind partnership / contact-sales / app review.",
+    "evidence_urls": [
+      "https://developer.intuit.com/app/developer/qbo/docs/develop",
+      "https://developer.intuit.com/app/developer/qbo/docs/get-started",
+      "https://apitracker.io/a/quickbooks"
+    ],
+    "evidence_notes": "The page mentions the Intuit App Partner Program, indicating a partnership/gate for access.",
+    "confidence": 0.8,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "partner-gated"
+  },
+  {
+    "id": 87,
+    "name": "Xero",
+    "category": "Finance and Fintech",
+    "hint": "developer.xero.com",
+    "one_liner": "Xero provides a public API with tiered plans for developers to connect and integrate with its services.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": true,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developer.xero.com/",
+      "https://developer.xero.com/documentation/api/accounting/overview",
+      "https://developer.xero.com/documentation/getting-started-guide/",
+      "https://developer.xero.com/pricing"
+    ],
+    "evidence_notes": "The page states OAuth 2.0 is used for authorization and highlights a self-serve model for app registration.",
+    "confidence": 0.95,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 88,
+    "name": "Brex",
+    "category": "Finance and Fintech",
+    "hint": "developer.brex.com",
+    "one_liner": "Brex provides a public API that requires a user token for authentication, obtained through the Brex dashboard.",
+    "auth_methods": [
+      "token"
+    ],
+    "access_model": "admin-approval",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-with-friction",
+    "main_blocker": "Requires org admin / developer-token approval to call in production.",
+    "evidence_urls": [
+      "https://developer.brex.com/guides/authentication",
+      "https://developer.brex.com/",
+      "https://developer.brex.com/guides/partner_authentication"
+    ],
+    "evidence_notes": "To use the developer API, the developer must sign in to the Brex dashboard as an account or card admin and accept the developer API agreement, indicating admin approval is required.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "admin-approval"
+  },
+  {
+    "id": 89,
+    "name": "Ramp",
+    "category": "Finance and Fintech",
+    "hint": "docs.ramp.com",
+    "one_liner": "Ramp provides an API for businesses to integrate with their financial tools and services.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-trial",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://docs.ramp.com/openapi/developer-api.json",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.ramp.com",
+      "https://ramp.com/pricing"
+    ],
+    "evidence_notes": "Developers can create credentials and request a sandbox for building, indicating self-serve access; OAuth consent may be requested for integrations.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-trial"
+  },
+  {
+    "id": 90,
+    "name": "PitchBook",
+    "category": "Finance and Fintech",
+    "hint": "pitchbook.com (research API)",
+    "one_liner": "PitchBook’s API solution allows you to call specific PitchBook data into your internal business systems on demand.",
+    "auth_methods": [
+      "token"
+    ],
+    "access_model": "partner-gated",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "blocked",
+    "main_blocker": "Credentials gated behind partnership / contact-sales / app review.",
+    "evidence_urls": [
+      "https://pitchbook.com",
+      "https://documenter.getpostman.com/view/5190535/TzCV1iRc",
+      "https://pitchbook.com/help/PitchBook-api",
+      "https://pitchbook.com/products/direct-access-data/api"
+    ],
+    "evidence_notes": "You need to send a request directly to the Direct Data team or use the Plugins & Apps section if you're a client.",
+    "confidence": 0.8,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "partner-gated"
+  },
+  {
+    "id": 91,
+    "name": "NotebookLM",
+    "category": "AI, Research and Media-native",
+    "hint": "cloud.google.com/gemini (Enterprise API)",
+    "one_liner": "Google AI provides enhanced access to AI tools, models, and storage plans for productivity and creativity using its Gemini platform.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://cloud.google.com/gemini",
+      "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/api-notebooks",
+      "https://docs.cloud.google.com/gemini/enterprise/notebooklm-enterprise/docs/set-up-notebooklm",
+      "https://cloud.google.com/apis",
+      "https://one.google.com/about/google-ai-plans/"
+    ],
+    "evidence_notes": "The page outlines various subscription plans but does not mention a public API or authentication methods.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 92,
+    "name": "Otter AI",
+    "category": "AI, Research and Media-native",
+    "hint": "help.otter.ai (MCP server)",
+    "one_liner": "Otter provides AI-driven transcription and note-taking solutions for meetings and conferences.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://otter.ai/integrations/desktop",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://help.otter.ai/hc/en-us/articles/36130822688279-Otter-ai-Public-API",
+      "https://apitracker.io/a/otter-ai",
+      "https://help.otter.ai/hc/en-us/articles/27616131311127-Connect-Otter-to-Zapier",
+      "https://otter.ai/pricing"
+    ],
+    "evidence_notes": "The page indicates a free plan available for getting started, along with an API and webhooks feature in the Enterprise plan.",
+    "confidence": 0.9,
+    "flags": [
+      "access-refined:paid-plan->self-serve-free"
+    ],
+    "looks_like_oss": false,
+    "first_pass_access_model": "paid-plan"
+  },
+  {
+    "id": 93,
+    "name": "Fathom",
+    "category": "AI, Research and Media-native",
+    "hint": "fathom.video",
+    "one_liner": "Fathom provides a public API for developer access to meeting insights and integration with other tools.",
+    "auth_methods": [
+      "oauth2"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://developers.fathom.ai/sdks/authentication",
+      "https://developers.fathom.ai/",
+      "https://help.fathom.video/en/articles/8368641",
+      "https://www.fathom.ai/pricing"
+    ],
+    "evidence_notes": "The public API allows anyone to browse the docs and build, and OAuth apps can be created for integrations.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 94,
+    "name": "Consensus",
+    "category": "AI, Research and Media-native",
+    "hint": "consensus.app (OAuth requested)",
+    "one_liner": "The Consensus API offers self-serve access with API keys for various subscription plans.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://mcp.consensus.app/mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://consensus.app/home/api/",
+      "https://support.goconsensus.com/consensus-api-documents",
+      "https://docs.consensus.app/api-get-started",
+      "https://docs.consensus.app/api-plans-and-access"
+    ],
+    "evidence_notes": "The API is self-serve and requires developers to create keys and manage plan limits.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 95,
+    "name": "Reducto",
+    "category": "AI, Research and Media-native",
+    "hint": "reducto.ai (document parsing)",
+    "one_liner": "Reducto provides an API for parsing and extracting structured data from documents.",
+    "auth_methods": [
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.reducto.ai/quickstart",
+      "https://docs.reducto.ai/overview",
+      "https://reducto.ai/",
+      "https://reducto.ai/pricing"
+    ],
+    "evidence_notes": "Users can sign up for a free account to create an API key immediately.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 96,
+    "name": "Devin",
+    "category": "AI, Research and Media-native",
+    "hint": "docs.devin.ai (MCP)",
+    "one_liner": "Devin provides an API toolkit for coding with different agent models and features.",
+    "auth_methods": [
+      "oauth2",
+      "api_key"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "REST"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://docs.devin.ai/work-with-devin/devin-mcp",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — OAuth app registration is self-serve.",
+    "evidence_urls": [
+      "https://docs.devin.ai",
+      "https://devin.ai/pricing"
+    ],
+    "evidence_notes": "The pricing section mentions various plans, including a Free plan that allows for usage without additional approval, suggesting self-serve access.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 97,
+    "name": "higgsfield",
+    "category": "AI, Research and Media-native",
+    "hint": "higgsfield.ai/cli (content suite)",
+    "one_liner": "Higgsfield provides a platform for AI content generation with various subscription plans.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "broad",
+    "has_mcp": true,
+    "mcp_url": "https://open.higgsfield.ai/",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://docs.higgsfield.ai/",
+      "https://github.com/higgsfield-ai/higgsfield-client",
+      "https://mindcloud.co/docs/universal/rest/higgsfield-ai/latest",
+      "https://higgsfield.ai/pricing"
+    ],
+    "evidence_notes": "The page indicates that Higgsfield offers a free plan with limited access and does not mention an external API for developer use.",
+    "confidence": 0.95,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 98,
+    "name": "Mermaid CLI",
+    "category": "AI, Research and Media-native",
+    "hint": "github.com/mermaid-js/mermaid-cli",
+    "one_liner": "Mermaid provides tools for creating diagrams with various pricing plans.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "unknown",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "not-an-api",
+    "main_blocker": "No hosted/agent-callable API (CLI, OSS tool, or UI-only).",
+    "evidence_urls": [
+      "https://github.com/mermaid-js/mermaid-cli",
+      "https://github.com/marketplace/actions/setup-mermaid-cli",
+      "https://mermaid.ai/open-source/config/mermaidCLI.html",
+      "https://mermaid.ai/pricing/"
+    ],
+    "evidence_notes": "The Basic plan allows users to start creating diagrams for free without needing API authentication.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": true,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 99,
+    "name": "YouTube Transcript",
+    "category": "AI, Research and Media-native",
+    "hint": "transcriptapi.com",
+    "one_liner": "This app offers a service to generate transcripts from YouTube videos with various subscription plans for different usage levels.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": false,
+    "mcp_url": "",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://transcriptapi.com/",
+      "https://transcriptapi.com/blog/youtube-transcript-api-complete-developer-guide",
+      "https://github.com/jdepoix/youtube-transcript-api",
+      "https://www.youtube-transcript.io/pricing"
+    ],
+    "evidence_notes": "The app provides a free plan with no card needed to try out the service.",
+    "confidence": 0.9,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  },
+  {
+    "id": 100,
+    "name": "Grain",
+    "category": "AI, Research and Media-native",
+    "hint": "grain.com (meeting notes)",
+    "one_liner": "Grain offers a public API with personal API and webhooks for integrating meeting functionalities.",
+    "auth_methods": [
+      "none"
+    ],
+    "access_model": "self-serve-free",
+    "api_type": [
+      "none"
+    ],
+    "api_breadth": "medium",
+    "has_mcp": true,
+    "mcp_url": "https://support.grain.com/en/articles/14811968-how-to-use-the-grain-mcp-server",
+    "composio_toolkit": null,
+    "composio_url": "",
+    "verdict": "buildable-now",
+    "main_blocker": "None — self-serve credentials + public API.",
+    "evidence_urls": [
+      "https://developers.grain.com/",
+      "https://developers.grain.com/authentication.html",
+      "https://support.grain.com/en/articles/15507288-grain-api",
+      "https://support.grain.com/en/articles/9253220-plans"
+    ],
+    "evidence_notes": "The documentation mentions personal API and webhooks under the Free plan, indicating no special authentication is needed beyond account creation.",
+    "confidence": 1.0,
+    "flags": [],
+    "looks_like_oss": false,
+    "first_pass_access_model": "self-serve-free"
+  }
+]
