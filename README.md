@@ -1,4 +1,4 @@
-# Composio — 100-App Agent Research Pipeline
+# 100-App Agent Research Pipeline
 
 Research 100 apps for one question: **can an AI agent call this app as a toolkit today?**
 For each app the agent captures category, auth method(s), self-serve-vs-gated access, API
